@@ -1448,7 +1448,8 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 
 #primary-menu.style-2 > div #top-search,
 #primary-menu.style-2 > div #top-cart,
-#primary-menu.style-2 > div #side-panel-trigger {
+#primary-menu.style-2 > div #
+ {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -1610,7 +1611,8 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 
 #primary-menu.sub-title.style-2 > div #top-search,
 #primary-menu.sub-title.style-2 > div #top-cart,
-#primary-menu.sub-title.style-2 > div #side-panel-trigger {
+#primary-menu.sub-title.style-2 > div #
+ {
 	float: right;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -1772,7 +1774,8 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 
 #top-search,
 #top-cart,
-#side-panel-trigger,
+#
+,
 #top-account {
 	float: right;
 	margin: 40px 0 40px 15px;
@@ -1782,7 +1785,8 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 
 #top-search a,
 #top-cart > a,
-#side-panel-trigger a {
+#
+ a {
 	display: block;
 	position: relative;
 	width: 14px;
@@ -2110,7 +2114,8 @@ body:not(.top-search-open) #header-wrap #logo,
 body:not(.top-search-open) #primary-menu > ul,
 body:not(.top-search-open) #primary-menu > .container > ul,
 body:not(.top-search-open) #top-cart,
-body:not(.top-search-open) #side-panel-trigger,
+body:not(.top-search-open) #
+,
 body:not(.top-search-open) #top-account {
 	opacity: 1;
 	-webkit-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
@@ -2122,7 +2127,8 @@ body.top-search-open #header-wrap #logo,
 body.top-search-open #primary-menu > ul,
 body.top-search-open #primary-menu > .container > ul,
 body.top-search-open #top-cart,
-body.top-search-open #side-panel-trigger,
+body.top-search-open #
+,
 body.top-search-open #top-account { opacity: 0; }
 
 #header.sticky-header.semi-transparent { background-color: transparent; }
@@ -2161,7 +2167,8 @@ body.top-search-open #top-account { opacity: 0; }
 
 #header.sticky-header:not(.static-sticky) #top-search,
 #header.sticky-header:not(.static-sticky) #top-cart,
-#header.sticky-header:not(.static-sticky) #side-panel-trigger {
+#header.sticky-header:not(.static-sticky) #
+ {
 	margin-top: 20px !important;
 	margin-bottom: 20px !important;
 }
@@ -2814,14 +2821,16 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched .slider-parallax-
 	right: auto;
 }
 
-#side-panel-trigger {
+#
+ {
 	display: block;
 	cursor: pointer;
 	z-index: 11;
 	margin-right: 5px;
 }
 
-#side-panel-trigger-close a { display: none; }
+#
+-close a { display: none; }
 
 #side-panel,
 body.side-push-panel.stretched #wrapper,
@@ -13998,7 +14007,8 @@ body:not(.no-transition) #wrapper,
 }
 .services-content{
 	position: absolute !important;
-	top: 150px;
+	top: 170px;
+	right: 50px;
 
 }
 h1 {
@@ -14012,4 +14022,142 @@ h1 {
 a.button:hover {
 	box-shadow: 0 2px 6px rgba(0,0,0,.5);
 	transform: scale(.98) translateY(-5px);
+}
+.wow {
+	visibility: hidden;
+ }
+.team-image--lineheight{
+	line-height: 1;
+}
+
+
+#copyrights {
+	display: flex;
+	justify-content: space-beetwen;
+	padding-right: 100px;
+	padding-left: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+  }
+
+  .video-wrap{
+	  background: rgba(11, 11, 11,0.5)  !important;
+  }
+
+  .team-image .icon-mail-bulk{
+	  font-size:70px !important;
+  }
+
+  #primary-menu a{
+color:white!important;
+font-size:14px!important;
+  }
+
+  #primary-menu a:hover{
+	color:rgba(26, 188, 156,1) !important;
+	  }
+
+	.vertical-middle h1, .vertical-middle p{
+		color:white!important;
+	}
+
+
+	#slider a:hover{
+background:white!important;
+color:rgba(26, 188, 156,1) !important;
+	}
+
+/*-  theme system email-*/	
+.team-image__icon{
+	width: 5rem !important;
+	margin: 0 auto !important;
+}
+.wrapper-card-info{
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.card-info{
+
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.55);
+border-radius: 5px;
+padding: 1rem;
+margin: 0 2rem 2rem; 
+ max-width: 29%;
+}
+
+.card-info .team-desc-bg{
+	background: transparent;
+
+}
+
+.card-info:hover{
+	background-color: rgba(26, 188, 156,0.9);
+	transition: all .4s ease;
+}
+
+
+.card-info:hover h4{
+	color: #fff;
+}
+
+.card-info:hover span{
+	color: #d7d7d7;
+}
+.sticky-header #primary-menu a {
+	color: black !important;
+}
+
+
+.wrapper-steps{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+.wrapper-steps__image{
+	width: 50%;
+	text-align: center;
+}
+.wrapper-steps__image img{
+	width:50%;
+
+}
+.wrapper-steps__info{
+	padding: 1rem;
+	width: 50%;
+}
+.el-info{
+	font-size: 1.1rem;
+}
+.el-info h4{
+	font-size: 2rem;
+	margin-bottom: .5rem; 
+}
+
+.wrapper-steps-right{
+	flex-direction: row-reverse;
+
+}
+
+.title-design-section{
+	max-width: 1000px; 
+	font-size: 40px; 
+	color:black;
+
+}
+
+.content-footer{
+	padding: 30px 0;
+}
+.wrapper-footer{
+	margin: 0 auto;
+	display: flex;
+}
+.wrap-copyright{
+	width: 80%;
+}
+.wrap-social-media{
+	width: 20%;
 }
