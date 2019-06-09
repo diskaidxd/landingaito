@@ -9,6 +9,12 @@
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  
+  <!-- usando slick js libreria -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
   <script src="https://kit.fontawesome.com/c1484bb494.js"></script>
   <!-- One Page Module Specific Stylesheet -->
   <link rel="stylesheet" href="css/onepage.css" type="text/css" />
@@ -304,7 +310,7 @@
                 </div>
               </div>
               <div class="wrapper-steps__image">
-                <img class="" src="images/mailbox1.jpg">
+                <img class="" src="images/mailbox12.jpg">
 
               </div>
            </div> 
@@ -321,7 +327,7 @@
                   </div>
                 </div>
                 <div class="wrapper-steps__image">
-                  <img class="" src="images/mailbox2.jpg">
+                  <img class="" src="images/mailbox22.jpg">
                 </div>
            </div> 
 
@@ -337,14 +343,48 @@
                    </div>
                  </div>
                  <div class="wrapper-steps__image">
-                   <img class="" src="images/mailbox3.jpg">
+                   <img class="" src="images/mailbox32.jpg">
                  </div>
             </div> 
           </div>
         </div>
       <div id="section-services" class="page-section notoppadding"></div>
 
-        <div class="section parallax nomargin dark services-overlay"
+      <div class="main">
+      
+        <div class="slider slider-nav">
+          <div>
+            <div class="wrapper-review wrapper-review--slideA">
+              <div class="wrap-msg">
+                  <p>"Covering loads is easy in this market. We do not need to post them on load boards" </p>
+                  <p>-Top 10 Brokerages in US</p>
+              </div>
+              <div class="wrap-opc" ></div>
+            </div>
+          </div>
+            <!-- <img class="main-image-slide" src="images/email1.jpg" alt=""></div> -->
+          <div>
+              <div class="wrapper-review wrapper-review--slideB">
+                  <div class="wrap-msg">
+                      <p>"Covering loads is easy in this market. We do not need to post them on load boards" </p>
+                      <p>-Top 10 Brokerages in US</p>
+                  </div>
+                  <div class="wrap-opc"></div>
+                </div>
+          </div>
+          <div>
+              <div class="wrapper-review wrapper-review--slideC">
+                  <div class="wrap-msg">
+                      <p>"Covering loads is easy in this market. We do not need to post them on load boards" </p>
+                      <p>-Top 10 Brokerages in US</p>
+                  </div>
+                  <div class="wrap-opc" ></div>
+                </div>
+          </div>
+        </div>
+
+      </div>
+        <!-- <div class="section parallax nomargin dark services-overlay"
           style="background-image: url('images/email1.jpg');background-size: cover; padding: 150px 0;"
           data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
 
@@ -354,7 +394,7 @@
 
             <div class="col_three_fifth nobottommargin col_last" style="font-size:25px">
 
-              <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding"
+              <!-- <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding"
                 data-arrows="false">
                 <div class="flexslider">
                   <div class="slider-wrap">
@@ -364,7 +404,7 @@
                           load boards </p>
                         <div class="testi-meta">
                           Top 10 Brokerages in US
-                          <!-- <span>Apple Inc.</span> -->
+                        
                         </div>
                       </div>
                     </div>
@@ -374,7 +414,7 @@
                           this alerts me to the ones I need to look at.</p>
                         <div class="testi-meta">
                           Gant @ Home Sourced Logistics
-                          <!-- <span>Envato Inc.</span> -->
+                         
                         </div>
                       </div>
                     </div>
@@ -384,19 +424,14 @@
                           email as it comes in.</p>
                         <div class="testi-meta">
                           Marina T. @ JSK Transport
-                          <!-- <span>XYZ Inc.</span> -->
+                       
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
+              </div> -->
+        
 
       <!-- </div> -->
 
@@ -528,6 +563,8 @@
   <script src="js/jquery.gmap.js"></script>
   <script src="js/wowjs-repeat-animation.js"></script>
 
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
   <!-- Footer Scripts
 	============================================= -->
   <script src="js/functions.js"></script>
@@ -535,6 +572,23 @@
   <!--wowjs animation-->
 
   <script>
+    $(document).ready(function(){
+ $('.slider-nav').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   dots: true,
+   focusOnSelect: true,
+   autoplay: true,
+  autoplaySpeed: 2000,
+ });
+
+ $('a[data-slide]').click(function(e) {
+   e.preventDefault();
+   var slideno = $(this).data('slide');
+   $('.slider-nav').slick('slickGoTo', slideno - 1);
+ });
+
+    });
     jQuery(window).on('load', function () {
 
       // Google Map
