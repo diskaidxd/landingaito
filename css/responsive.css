@@ -1807,7 +1807,7 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991.98px
 	}
 	.wrap-copyright,
 	.wrap-social-media{
-		width: 100%;
+		width: 50%;
 	}
 	.wrap-msg{
 		width: 100%;
