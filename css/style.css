@@ -14049,7 +14049,7 @@ a.button:hover {
   }
 
   #primary-menu a{
-color:white;
+color:white !important;
 font-size:14px!important;
   }
 
@@ -14106,7 +14106,10 @@ margin: 0 2rem 2rem;
 	color: #d7d7d7;
 }
 .sticky-header #primary-menu a {
-	color: black ;
+	color: black !important ;
+}
+.sticky-header #primary-menu a:hover {
+	color: rgba(26, 188, 156,1) !important ;
 }
 
 
@@ -14253,4 +14256,3 @@ margin: 0 2rem 2rem;
 	margin-bottom: 0;
    } */
 
-   
