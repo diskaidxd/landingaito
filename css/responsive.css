@@ -1809,4 +1809,9 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991.98px
 	.wrap-social-media{
 		width: 100%;
 	}
+	.wrap-msg{
+		width: 100%;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }
